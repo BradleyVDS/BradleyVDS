@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+<style>
+p.one	{
+		 border-style: solid;
+		 border-color: red green yellow blue;
+		}
+
+p.border	{
+		border-top-style: dotted;
+		border-right-style: double;
+		border-bottom-style: dotted;
+		border-left-style: groove;
+		}
+
+p.properties	{
+				 border: 5px solid red
+				}
+
+p.normal1	{
+			 border: 2px solid red;
+			 padding: 5px;
+			}
+
+p.round1	{
+			 border: 2px solid red;
+			 padding: 5px;
+			 border-radius: 5px;
+			}
+
+p.round2	{
+			 border: 2px solid red;
+			 padding: 5px;
+			 border-radius: 8px;
+			}
+
+p.round3	{
+			 border: 2px solid red;
+			 padding: 5px;
+			 border-radius: 12px;
+			}
+
+div1		{
+		 border: 1px solid blue;
+		 margin: 25px 50px 25px 50px;
+		 background-color: lightblue;
+		}
+
+p.padding1	{
+			 border: 1px solid red;
+			 padding: 70px;
+			}
+
+div2	{
+		 border: 1px solid red;
+		 padding: 70px;
+		 background-color: lightblue;
+		}
+
+div3	{
+		 background-color: lightgrey;
+		 width: 300px;
+		 border: 15px solid green;
+		 padding: 50px;
+		 margin:20px;
+		}
+
+
+p.outline	{
+			 border: 2px solid black;
+			 outline: #4CAF50 solid 10px;
+			 margin: auto;
+			 padding: 20px;
+			 text-align: center;
+			}
+
+h2.shadow	{
+			 text-shadow: 2px 2px;
+			}
+
+h2.shadowcolor	{
+				 text-shadow: 2px 2px red	
+				}
+
+h2.shadowblur	{
+				 text-shadow: 2px 2px 5px red
+				}
+
+a.one:link	{color:#ff0000;}
+a.one:visited	{color:0000ff;}
+a.one:hover	{color:#ffcc00;}
+
+a.two:link	{color:#ff0000;}
+a.two:visited	{color:#0000ff;}
+a.two:hover	{font-size:150%;}
+
+a.three:link	{color:#ff0000;}
+a.three:visited	{color:#0000ff;}
+a.three:hover	{background:#66ff66;}
+
+a.four:link	{color:#ff0000;}
+a.four:visited	{color:#0000ff;}
+a.four:hover	{font-family:monospace;}
+
+a.five:link	{color:#ff0000;text-decoration:none;}
+a.five:visited	{color:#0000ff;text-decoration:none;}
+a.five:hover	{text-decoration:underline;}
+
+.double-border-table, .double-border-table th, .double-border-table td {border:1px solid black;
+																		border-collapse:separate}
+
+.single-border-table, .single-border-table th, .single-border-table td {border:1px solid black;
+																		border-collapse:collapse}
+.single-border-table {width:100%;}
+
+.tall-header-table, .tall-header-table th, .tall-header-table td 	{border:1px solid black;
+																	border-collapse:collapse}
+.tall-header-table {width: 100%;}
+.tall-header-table th {height: 70px;}
+
+.table-hover-color, .table-hover-color th, .table-hover-color td	{border-collapse: collapse;
+																	border: 1px solid black;}
+.table-hover-color th td 	{padding: 8px;
+							text-align: left}
+.table-hover-color tr:hover {background-color: coral;}
+
+
+
+</style>
+
+<body>
+<h1>BORDERS</h1>
+<h3>You can creat multi coloured borders like the below</h3>
+
+<p class="one">A solid multicolor border</p>
+
+<h3>Border Sides</h3>
+
+<p class="border">You can change the border sides and have up to 4 different borders by creating a class for the border style.</p>
+<p>You can use the shorthand property in order to group all of the borders properties in a single line like the below</p>
+
+<p class="properties">Here, all of the properties are in 1 line of code.</p>
+
+<p>You can use the shorthand property to specify the properties for each individual border side as well</p>
+
+<h3>ROUNDED BORDERS</h3>
+<p> Below is examples of the different types of rounded borders you can create by changing the gradient</p>
+
+<p class="normal1">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p>
+
+
+<h3>MARGIN</h3>
+<p>You can create a margin around the border to space other texts from the border<p>
+
+<div1>As you can see by this example, there is a margin around the text. The light blue background shows you how wide the margin is on all 4 sides</div1>
+
+<h3>PADDING</h3>
+<P>You can add padding inside of the border</p>
+
+<p class="padding1">This is what the padding looks like</p>
+<br>
+<br>
+<br>
+<br>
+<div2>You can even include the div element to better show the padding</div2>
+
+<br>
+<br>
+<br>
+<br>
+
+<h1>BOX MODEL</h1>
+
+<p>The CSS Box Model is a box that wraps around every HTML element. It consist of borders, paddings, margins and the actual content. The below is an example</p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div3>This text is the content box. It has a 50px padding, 20px margin and a 15px green border around it</div3>
+
+<br>
+<br>
+<br>
+<br>
+
+<h1>OUTLINES</h1>
+<p>An outline is a line drawn on the outside of the elements border, like the below. The online is green.</p>
+
+<p class="outline">This is an example of an outline around the border</p>
+<br>
+<p><b>The outline-style is always required</p>
+
+<h2 class="shadow">This is how you create a shadow</h1>
+<p>You can even add a color to the shadow like the below</p>
+
+<h2 class="shadowcolor">Here we have a color added to the shadow</h1>
+<p>Next, we will add a blur to the text</p>
+
+<h2 class="shadowblur">Here, we have a blur added</h1>
+
+<h1>CSS FONTS</h1>
+
+<p>You can style fonts by linking a google fonts CSS Stylesheet to your HMTL document so that they contain effects like the below:</p>
+
+<h2 class="font-effect-neon">Neon</h2>
+<h2 class="font-effect-outline">Outline</h2>
+<h2 class="font-effect-emboss">Emboss</h2>
+<h2 class="font-effect-shadow-multiple">Multiple Shadow Effect</h2>
+
+<br>
+
+<h1>CSS STYLING LINKS</h1>
+
+<p>mouse over the links and watch them change layout</p>
+
+<p><b><a class="one" href="default.asp" target="_blank">This link changes color</a></b></p>
+<p><b><a class="two" href="default.asp" target="_blank">This link changes font-size</a></b></p>
+<p><b><a class="three" href="default.asp" target="_blank">This link changes background-color</a></b></p>
+<p><b><a class="four" href="default.asp" target="_blank">This link changes font-family</a></b></p>
+<p><b><a class="five" href="default.asp" target="_blank">This link changes text-decoration</a></b></p>
+
+<br>
+
+<h1>CSS TABLES</h1>
+<P>The below are examples of the different styles that can be used when creating tables</P>
+
+<table class="double-border-table">
+<tr>
+<th>First Name</th>
+<th>Last name</th>
+</tr>
+
+<tr>
+<td>Peter</td>
+<td>Griffin</td>
+</tr>
+
+<tr>
+<td>Lois</td>
+<td>Griffin</td>
+</tr>
+</table>
+
+<p>If the above table is too small then you can use the width function to make it bigger, as demonstrated in the Style </p>
+
+<p>You can also remove the one border from the table by using the border collapse function</p>
+
+<table class="single-border-table">
+
+
+<tr>
+	<th>First Name</th>
+	<th>Last Name</th>
+</tr>
+
+<tr>
+	<td>Peter</td>
+	<td>Griffin</td>
+</tr>
+
+<tr>
+	<td>Lois</td>
+	<td>Griffin</td>
+</tr>
+
+</table>
+
+<p>You can change the width of the table and row like the below</p>
+
+<table class="tall-header-table">
+
+	<tr>
+		<th>First Name</th>
+		<th>Last name</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+
+</table>
+
+<p>In the below example, you can dispaly a color when hovering over specific data</p>
+
+<table class="table-hover-color">
+
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Points</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+		<td>$100</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+		<td>$50</td>
+	</tr>
+
+	<tr>
+		<td>Joe</td>
+		<td>Swanson</td>
+		<td>$200</td>
+	</tr>
+
+	<tr>
+		<td>Cleveland</td>
+		<td>Brown</td>
+		<td>$250</td>
+	</tr>
+	
+</table>
+
+
+
+</body>
+</html>
