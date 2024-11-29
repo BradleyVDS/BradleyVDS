@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="utf-8"/>
+	<title>HTML Forms</title>
+</head>
+
+<h1 id="Forms">Forms</h1>
+<p>The below shows you how to add forms to a webpage</p>
+
+<h3>Text Input Feilds</h3>
+
+<form>
+	<label for="fname">First name:</label><br>
+	<input type="text" id="fname" name="fname" value="John"><br>
+	<label for="lname">Last name:</label><br>
+	<input type="text" id="lname" name="lname" value="Doe">
+	<input type="submit" value="Submit">
+</form>
+
+<p>Below are radio buttons which are another option<p>
+
+<form>
+	<input type="radio" id="html" name="fav_language" value="html">
+	<label for="html">HTML</label><br>
+	<input type="radio" id="css" name="fav_language" value="CSS">
+	<label for="css">CSS</label><br>
+	<input type ="radio" id="javascript" name="fav_language" value="Javascript">
+	<label for="javascript">Javascript</label><br>
+</form>
+  
+<p>There are a few attributes that can be used when using the form element, such as action, target, method, autocomplete and novalidate</p>
+
+<p>The select element allows you to change the data into a drop down menu</p>
+
+<form action="/action_page.php">
+	<label for="cars">Choose a car:</label>
+	<select id="cars" name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="volkswagen">Volkswagen</option>
+		<option value="audi">Audi</option>
+	</select>
+	<input type="submit">
+</form>
+<br>
+
+<p>You can use a multi-line input field as well.</p>
+
+<form action=".action_page.php">
+	<textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+	<br><br>
+</form>
+
+<p>The datalist element specifies a list of pre-defined options that can be selected as an input</p>
+
+<form action="/action_page.php">
+	<input list="browsers" name="browser">
+	<datalist id="browsers">
+		<option value="Edge">
+		<option value="Firefox">
+		<option value="Chrome">
+		<option value="Opera">
+		<option value="Safari">
+	</datalist>
+	<input type="submit">
+</form>
+<br>
+
+<p>The below is how to make the input a password field</p>
+
+<form action="/action_page.php">
+	<label for="username">Username</label><br>
+	<input type="text" id="username" name="username"><br>
+	<label for="pwd">Password:</label><br>
+	<input type="password" id="pwd" name="pwd"><br><br>
+	<input type="submit" value="submit">
+</form>
+<br>
+
+<p>You can make the form values dissapear after inputting it by using the reset button</p>
+
+<form action="/action_page.php">
+	<label for="username">Username</label><br>
+	<input type="text" id="username" name="username"><br>
+	<label for="pwd">Password:</label><br>
+	<input type="password" id="pwd" name="pwd"><br><br>
+	<input type="submit" value="submit">
+	<input type="reset" value="Reset">
+</form>
+
+
+
+
+
+
+
+
+</html>

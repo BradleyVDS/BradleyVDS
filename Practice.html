@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8"/>
+		<title>My first HTML page</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	
+	<style>
+	body {background-color: lightblue;}
+	</style>
+	   
+	
+	<body> 
+	
+	<a href="#headings">Jump to HTML Headings</a> <br>
+	<a href="#styles">HTML Styles</a> <br>
+	<a href="#quotes">HTML Quotes</a> <br>
+	<a href="#comments">HTML Comments</a> <br>
+	<a href="#colors">HTML Colors</a> <br>
+	<a href="#links">HTML Links</a> <br>
+	<a href="#images">HTML Images</a> <br>
+	<a href="#tables">HMTL Tables</a> <br>
+	<a href="#list">HTML Lists</a> <br>
+	<a href="#block and inline">HTML Block and Inline</a> <br>
+	<a href="#classes">HTML Classess</a> <br>
+	<a href="#ID">HTML ID</a>
+	<a href="#IFrames">HTML IFrames</a>
+	<a href="#Javascript">HTML Javascript</a>
+	<a href="#forms">HTML Forms</a>
+	<!--<a href="#"></a>
+	<a href="#"></a>
+	<a href="#"></a> -->
+	
+	
+	
+		<h1 id="headings"> My first practice CSS</h1>
+		<p>Hello World!!</p>
+		
+		<br>
+		
+		<p>The following is a list of available styles that can be done using <q>css</q></p> <br>
+		<p>The colour can be changed to </p> <p style="color:red"> red <p style=color:green> green </p> or <p style=color:blue> blue </p>
+		
+		<p> You can even have different sized headings like the below:</p>
+		<h1> This will be your most important/biggest heading</h1>
+		<h2>and it will </h2>	
+		<h3>drop down</h3>
+		<h4>until you get</h4>
+		<h5>the smallest</h5>
+		<h6>or least important heading</h6>
+		
+		<br>
+		
+		<h1 id="styles">Style</h1>
+		<p>you can make words <i>Italic</i> </p> <p>or you can make words <b>bold</b></p>
+		<p> text can be <strong> important</strong> or <em>emphasized</em> or <mark>marked</mark>. Text can even be made <small>smaller</small>, <del>deleted</del>, <ins>inserted</ins>, <sub>subscripted</sub> or even <sup>superscripted</sup> </p>
+		
+		<br>
+		
+		<h1 id="quotes">Quotes</h1>
+		<p> When quoting from websites, it's important to quote the site <blockquote cite="http://www.worldwildlife.org/who/index.html">This will have the site you got the quote from, as well as the quote you want to add</blockquote> - this is just an example </p>
+		
+		<p> You can even just <q>quote</q> or <abbr title="abbreviate">abbr</abbr> words. </p>
+		<p>If you want to add an address to a website then you can use the <address>Written by John Doe.<br>
+																					Visit us at:<br>
+																					Example.com<br>
+																					Box 564, Disneyland<br>
+																					USA
+																			</address> </p>
+																			
+<p> You can also cite book names or poems like this <cite>The Scream</cite> by Edvard Munch. </p>
+<p> You can over complicate things by writting <bdo dir="rtl">like this</bdo> </p>	
+
+<br>
+
+<h1 id="comments">Comments</h1>
+<p> You won't be able to see anything I write in here <!--I love you--> and that's because I made it a comment which is hidden from the webpage </p>
+<br>
+
+<h1 id="colors">Colors</h1>
+<p> Next up we got <h1 style="background-color:darkblue"> Headings with background colours </h1> </p>
+<p style= "background-color:red"> Or we can just have a paragraph with a background color </p>
+<p style="color:green"> We can even just change the color of the writting, as previously mentioned </p>
+<h1 style="border: 2px solid tomato;">If you're feeling really fancy then we can add this border around the header </h1>
+<h4 style="border: 10px solid blue;"> We can change the heading size and border size if need be </h4>
+
+<br>
+
+<h1 id="links">Links</h1>
+<p> You can also add a hyperlink to access a website </p> <a href="https://www.google.co.za" title="This takes you to Google"> Visit Google</a>
+
+<p>You can even use an image to load up a specific website. The below image will take you to Google </p>
+
+<a href="https://www.google.co.za">
+<img src="smiley.gif" alt"html tutorial" style="width:20px;height:20px;">
+</a>
+
+<p>If you want someone to contact you via email then you can use the <a href="mailto:bradleyvanderschyff@gmail.com"> To send an email </a>
+<br>
+
+<h1 id="images">Images</h1>
+<p>Images can be added like the below</p>
+<img src="Shoe box.jpg" alt="Shoe box" style="width:200px; height:200px;">	
+<br>
+
+<p> You can also make an image clickable so that it will load up a webpage that will give you more info on the area clicked like the below </p>
+<img src="practice.jpg" alt="image of the desk" style="width:700px; height:500px" usemap="#workmap">
+
+<map name="workmap">
+	<area shape="rect" coords="201,320,293,420" alt="phone" href="https://shop.samsung.com/za/Products/Smartphones/c/SP">																	
+	<area shape="rect" coords="439,34,513,429" alt="water bottle" href="https://zerodrinks.co.za/products/valpre-still-spring-water?srsltid=AfmBOor-lh2ZPKVIeLiyTWzGVz5wKtovIaev74IhLntt9cN153NUjmCC">
+	<area shape="rect" coords="332,346,400,444" alt="mint flavour" href="https://www.alfakher.com/ku/products/flavors/mint">
+</map>	
+<br>
+
+<h1 id="tables"> Tables</h1>
+<p>You can even create a table like the below</p>
+
+<style>
+	table, th, td 	{
+					border:1px solid Black
+					}
+</style>
+
+<table>
+	<tr> 
+		<th>Name</th>
+		<th>Age</th>
+		<th>Race</th>
+	</tr>
+	<tr>
+		<td>John</td>
+		<td>20</td>
+		<td>White</td>
+	</tr>
+	<tr>
+		<td>Luke</td>
+		<td>21</td>
+		<td>Black</td>
+	</tr>
+	<tr>
+		<td>George</td>
+		<td>22</td>
+		<td>Coloured</td>
+	</tr>
+</table>
+
+<br>
+
+<h1 id="list">List</h1>
+<p> We can create navigation panels like the below using a different tyoe of table formula</p>
+
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+	}
+	
+li {
+	float: left;
+	}
+	
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+	 }
+	 
+li a:hover {
+	background-color: #111111;
+			}
+			
+</style>
+
+<h2>Navigation Menu</h2>
+<p>We are going to use the CSS to style the list horizontally to create a navigation menu</p>
+
+<ul>
+	<li><a href="#Home">Home</a></li>
+	<li><a href="#Gallery">Gallery</a></li>
+	<li><a href="#Contact">Contact Us</a></li>
+	<li><a href="#About">About</a></li>
+</ul>
+
+<h1 id="block and inline">Block and Inline</h1>
+<p>You can seperate a block by using the Div element, The below block is using the Div element as a container</p>
+
+<div style="background-color:#FFC0C7;">
+	<h2>London</h2>
+	<p>London is the capital city of England</p>
+	<p>London has ver 13 million inhabitants</p>
+</div>
+
+<br>
+
+<h1 id="classes">Classes</h1>
+<p>You can use the class attribute to style one or more elements equally like the below</p>
+<br>
+
+<style>
+	.city {
+			background-color: red;
+			color: white;
+			margin:2px;
+			padding:20px;
+		  }
+</style>
+
+<body>
+		  
+<div class="city">
+	<h3>Paris</h3>
+	<p>paris is the capital of France</p>
+</div>
+
+<div class="city">
+	<h3>London</h3>
+	<p>London is the capital of England</p>
+</div>
+
+<div class="city">
+	<h3>Tokyo</h3>
+	<p>Tokyo is the capital of Japan</p>
+</div>
+</body>
+
+<p>The class name can be used by multiple HTML elements while the ID name can only be used by one HTML element. The example below shows how this works</p>
+
+<style>
+	#myheader {
+				background-color: green;
+				color: white;
+				padding:40px;
+				text-align: center;
+			  }
+	.citys {
+			background-color: black;
+			color: red;
+			padding:10px;
+		  }
+</style>
+
+<h1 id="ID">ID</h1>
+<body>
+
+<!--An element with a unique id-->
+<h1 id="myheader">My Cities</h1>
+
+<!--Multiple elements with the same class-->
+<h2 class="citys">London</h2>
+<p>London is the capital of England</p>
+
+<h2 class="citys">Paris</h2>
+<p>Paris is the capital of France</p>
+
+<h2 class="citys">Tokyo</h2>
+<p>Tokyo is the capital of Japan</p>
+
+</body>
+</style>
+		
+<br>
+
+<p>If you scroll to the top of the page, you will see bookmarks have been created. This will help jump to specific sections of this training page for ease of use</p>
+		
+<br>
+
+<h1 id="IFrames">IFrames</h1>
+<p>The HTML IFrame is used to display a webpage within a webpage. The Tag iframe specifies an inline frame. An Inline frame is used to embed another document within the current HTML document</p>
+
+<p>You can use the height and width attribute to specify the size of the iframe</p>
+
+<iframe src="https://en.wikipedia.org/wiki/Main_Page" height="200" width="300" title="Iframe example"></iframe>
+
+<p>The size of the iframe can also be specified using the style attribute</p>
+
+<iframe src="https://en.wikipedia.org/wiki/Main_Page" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+<p>By default, the Iframe has a border but you can remove it using the style attribute with the CSS border property. By using the CSS border property, you can also change the style and color of the iframe's border</p>
+
+<iframe src="https://en.wikipedia.org/wiki/Main_Page" style="border:none" title="Iframe Example"></iframe>
+
+<p>Iframe's can also be used as a target frame for a link. The target attribute of the link must refer to the name attribute of the iFrame</p>
+
+<iframe src="https://en.wikipedia.org/wiki/Main_Page" name="iframe_a" title="Iframe Example"></iframe>
+<p><a href="https://en.wikipedia.org/wiki/Main_Page" target="iframe_a">Wikipedia Main Page</a></p>
+
+<br>
+
+<h1 id="Javascript">Javascript</h1>
+<p>The HTML Element "script" is used to define a client-side script (Javascript). Common uses for Javascript are image manipulation, form validation and dynamic changes of content.</p>
+
+<p>Javascript can chenge content of an HTML Element</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p id="demo">This is a demonstration</p>
+
+<script>
+	function myFunction() {
+							document.getElementById("demo").innerHTML = "Hello JavaScript!";
+						  }
+						  
+</script>
+
+<br>
+
+<p id="demo1">JavaScript can also change the styles of text</p>
+
+<script>
+function myFunction1() {
+						document.getElementById("demo1").style.fontsize = "25px";
+						document.getElementById("demo1").style.color = "red"; 
+						document.getElementById("demo1").style.backgroundColor = "Yellow";
+					  }
+</script>
+
+<button type="button" onclick="myFunction1()">Click Me!</button>
+
+<br>
+
+<p>JavaScript can change attributes as well. Here, A JavaScript changes the value of a src attribute of an image.</p>
+
+<script>
+function light(sw) {
+					var pic;
+					if (sw == 0) {
+								  pic = "pic_bulboff.gif"
+							     } else {
+										 pic = "pic_bulbon.gif"
+									    }
+					document.getElementById('myImage').src = pic;
+				   }
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="100">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<nav>
+
+	<a href="#headings">Jump to HTML Headings</a>
+	<a href="#styles">HTML Styles</a>
+	<a href="#quotes">HTML Quotes</a>
+	<a href="#links">HTML Links</a>
+	<a href="#images">HTML Images</a>
+	<a href="#tables">HMTL Tables</a>
+	<a href="#list">HTML Lists</a>
+	<a href="#block and inline">HTML Block and Inline</a>
+	<a href="#classes">HTML Classess</a>
+	<a href="#ID">HTML ID</a>
+	<a href="#IFrames">HTML IFrames</a>
+	<a href="#Javascript">HTML Javascript</a>
+
+</nav>
+
+	</body>	
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>HTML API's</title>	
+
+
+</head>
+
+
+<body>
+<h1>Geolocation</h1>
+
+<p>Using the getCurrentPosition() method will return the users position</p>
+<h3>Click the button below to get your location</h3>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+	const x = document.getElementById ("demo");
+	
+	function getLocation() {
+							if (navigator.geolocation) {
+														navigator.geolocation.getCurrentPosition(showPosition);
+													   } else {
+																x.innerHTML = "Geolocation is not supported by this browser";
+											 		          }
+						   }
+
+	function showPosition(position) {
+									 x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+									}
+</script>									
+
+<p>The above scripting will do the following actions:<br>
+<ul>
+	<li>Check if geolocation is supported</li>
+	<li>If supported, run the getCurrentPosition() method. If not then display a message to the user</li>
+	<li>If the getCurrentPosition() method is successful, it displays the coordinates to the (showPosition) function</li>
+</ul>
+
+<br>
+
+<p>The below with demonstrate the second parameter of the getCurrentPosition(). It's used to handle errors and specifies a function to run if it fails to get the users location</p>
+
+<p>Click the button to get your location</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo1"></p>
+
+<script>
+	const x = document.getElementById("demo1");
+	
+	function getLocation() {
+							if (navigator.geolocation) {
+														navigator.geolocation.getCurrentPosition(showPosition, showError);
+													   } else {
+																x.innerHTML = "Geolocation is not supported by this browser";
+															  }
+						   }
+
+	function showPosition(position) {
+									 x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+									}
+									
+	function showError(error) {
+								switch (error.code) {
+													 case error.PERMISSION_DENIED:
+													 x.innerHTML = "User denied the request for Geolocation"
+													 break;
+													 case error.POSTION_UNAVAILABLE:
+													 x.innerHTML = "Location information is unavailable."
+													 break;
+													 case error.TIMEOUT:
+													 x.innerHTML = "The request to get user information timed out."
+													 break;
+													 case error.UNKNOWN_ERROR:
+													 X.INNERhtml = "An inknown error occured."
+													 break;
+													}
+							   }
+</script>
+
+</h3>Understanding the code</h3>
+<h4>Check the Geolocation</h4>
+<p>The navigator.geolocation function is the interface for accessing the Geolocation API in JavaScript. The if (navigator.geolocation) check ensures that the users brownser supports geolocation</p>
+ 
+ <h4>Get Current Position</h4>
+ <p>navigator.geolocation.getCurrentPosition(showPosition, showError) requests the users location</p>
+ <ul>
+	<li>showPosition is a callback function executed when the location is successfully obtained</li>
+	<li>showError is a callback function executed when there is a error (eg: if the user denies permission)</li>
+</ul>
+
+<h4>Show the Position</h4>
+<p>showPosition(position) extracts the latitude and logitude from the position object and displays them on the webpage</p> 
+
+<h4>Handle Errors</h4>
+<p>showError(error) provides feedback to the user if there is an issue, such as permission denial or unavailable location data</p>
+
+</body>
+
+
+<body>
+
+<h1>The below is an example of how to use the watchPosition function to get continues updates of the location as the user moves</h1>
+<p>Click the button to get the coordinates</p>
+
+<button onclick="getLocation()"> Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation()  {
+						if (navigator.geolocation) {
+													navigator.geolocation.watchPosition(showPosition);
+												   } else {
+															x.innerHTML = "Geolocation is not supported by this browser.";
+														  }
+					    }
+
+function showPosition(position) {
+								 x.innerHTML="Latitude: " + position.coords.latitude + 
+								 "<br>Longitude: " + position.coords.longitude;
+							    }
+</script>
+<br>
+<br>
+		
+
+
+</body>
+
+</html>
